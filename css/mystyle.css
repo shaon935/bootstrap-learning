@@ -1,8 +1,28 @@
 .icons{
-background-color: #5894fc;
-margin-top:50px;
-border-radius:0px !important;
+	background-color: #5894fc;
+	margin-top:50px;
+	border-radius:0px !important;
 }
 .my-icon{
-font-size:50px;
+	font-size:50px;
+}
+.navbar{
+	border-radius: 0px;
+	margin-bottom: 0;
+}
+
+.blue-line{
+    border: 1px solid #2968b2;
+}
+
+h1,h2{
+	font-family: Barrio;
+	font-size: 50px;
+	color: #337ab7;
+}
+.tableTron{
+	margin-top: 50px;
+}
+.my-panels{
+	margin-top: 60px;
 }
