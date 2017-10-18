@@ -4,30 +4,31 @@
 		<title>Learning bootstrap</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 	</head>
 	
 
 	<body>
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburgerMenu" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">Brand</a>
+		      <a class="navbar-brand" href="#">BOOTSTARP</a>
 		    </div>
 
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <div class="collapse navbar-collapse" id="hamburgerMenu">
 		      
 		      
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">About</a></li>
-		        <li><a href="#">Services</a></li>
-		        <li><a href="#">Contact</a></li>
+		        <li><a href="#about">About</a></li>
+		        <li><a href="#services">Services</a></li>
+		        <li><a href="#contact">Contact</a></li>
 		        
 		      </ul>
 		    </div> 
@@ -41,11 +42,11 @@
 
 				<div class="col-sm-12 text-center jumbotron">
 
-					<h1>Hello World</h1>
+					<h1 style="color: #337ab7;font-size: 80px;">Hello World</h1>
 
 					<hr>
 
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type <strong>specimen</strong> book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining <i>essentially</i> unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 
 				</div>
@@ -71,18 +72,30 @@
 	                </div>
             </div>
 
-            <div class="row jumbotron icons text-center">
+            <div class="row jumbotron icons text-center" id="about">
 				<div class="col-sm-12">
-					<div class="col-sm-4"><i class="fa fa-thumbs-up my-icon" aria-hidden="true"></i></div>
-					<div class="col-sm-4"><i class="fa fa-info my-icon" aria-hidden="true"></i></div>
-					<div class="col-sm-4"><i class="fa fa-trash my-icon" aria-hidden="true"></i></div>
+					<div class="col-sm-4">
+						<i class="fa fa-thumbs-up my-icon" aria-hidden="true"></i>
+						<hr class="blue-line">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, illo?</p>
+					</div>
+					<div class="col-sm-4">
+						<i class="fa fa-info my-icon" aria-hidden="true"></i>
+						<hr class="blue-line">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, illo?</p>
+					</div>
+					<div class="col-sm-4">
+						<i class="fa fa-trash my-icon" aria-hidden="true"></i>
+						<hr class="blue-line">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, illo?</p>
+					</div>
 				</div>
 			</div>
 
-            <div class="row">
+            <div id="services" class="row">
 	                <div class="col-sm-6 col-sm-offset-3">
 
-	                	<h3 class="text-center">Here are some underscore</h3>
+	                	<h2 class="text-primary text-center">SERVICES</h2>
 	                
 	                	<ul class="list-group">
 
@@ -96,9 +109,10 @@
 	                </div>
 	        </div>
 
-			<div class="row">
+			<div id="contact" class="row">
 				<div class="col-sm-8 col-sm-offset-2">
-					<h2>Forms in Bootstrap</h2>
+					<h2 class="text-primary text-center">CONTACT FORM</h2>
+					<hr>
 					<form>
 						<div class="form-group">
 							<label>Name</label>
@@ -120,6 +134,105 @@
 						</div>
 						<button class="btn btn-success">Submit</button>
 					</form>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="container-fluid jumbotron tableTron">
+					<div class="col-sm-10 col-sm-offset-1">
+						<h2 class="text-primary text-center">Tablestrap</h2>
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Email</th>
+									<th>Contact</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Shaon</td>
+									<td>shaon935@gmail.com</td>
+									<td>Dhaka, Bangladesh</td>
+								</tr>
+								<tr>
+									<td>Shaon</td>
+									<td>shaon935@gmail.com</td>
+									<td>Dhaka, Bangladesh</td>
+								</tr>
+								<tr>
+									<td>K S Rahman</td>
+									<td>ksrahman@iub.edu.bd</td>
+									<td>1955</td>
+								</tr>
+								<tr>
+									<td>Shoukatur Rahman</td>
+									<td>news@iub.edu.bd</td>
+									<td>8650699</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="row">
+				<div class="container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia atque voluptatibus reiciendis distinctio, totam sequi perspiciatis deserunt quo, ducimus exercitationem molestiae eveniet quos dolorem minima possimus ipsum nesciunt! Tempore?</p>
+					<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia atque voluptatibus reiciendis distinctio, totam sequi perspiciatis deserunt quo, ducimus exercitationem molestiae eveniet quos dolorem minima possimus ipsum nesciunt!</blockquote>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia atque voluptatibus reiciendis distinctio, totam sequi perspiciatis deserunt quo, ducimus exercitationem molestiae eveniet quos dolorem minima possimus ipsum nesciunt! Tempore?</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container-fluid my-panels">
+					<div class="col-sm-12">
+						<div class="col-sm-4">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3>This is cool</h3>
+								</div>
+								<div class="panel-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia atque voluptatibus reiciendis distinctio, totam sequi perspiciatis deserunt quo, ducimus exercitationem molestiae eveniet quos dolorem minima possimus ipsum nesciunt!</p>
+								</div>
+								<div class="panel-footer">
+									<button class="btn btn-info">
+										<i class="fa fa-thumbs-up" aria-hidden="true"></i> More info
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3>This is cool</h3>
+								</div>
+								<div class="panel-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia atque voluptatibus reiciendis distinctio, totam sequi perspiciatis deserunt quo, ducimus exercitationem molestiae eveniet quos dolorem minima possimus ipsum nesciunt!</p>
+								</div>
+								<div class="panel-footer">
+									<button class="btn btn-primary">
+										<i class="fa fa-thumbs-up" aria-hidden="true"></i> More info
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3>This is cool</h3>
+								</div>
+								<div class="panel-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia atque voluptatibus reiciendis distinctio, totam sequi perspiciatis deserunt quo, ducimus exercitationem molestiae eveniet quos dolorem minima possimus ipsum nesciunt!</p>
+								</div>
+								<div class="panel-footer">
+									<button class="btn btn-success">
+										<i class="fa fa-thumbs-up" aria-hidden="true"></i> More info
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
